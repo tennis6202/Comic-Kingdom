@@ -113,13 +113,6 @@ function decodeROT13(){
   });
   document.getElementById('decode-output').textContent = decoded;
 }
-  // Add a new history state when the page loads
-  history.pushState(null, null, location.href);
-
-  window.onpopstate = function () {
-    // This runs if the user presses back/forward
-    history.go(1); // Move forward again
-  };
 </script>
 </body>
 </html>
