@@ -61,13 +61,6 @@
         progress = 0; // reset progress on wrong click
       }
     }
-      // Add a new history state when the page loads
-  history.pushState(null, null, location.href);
-
-  window.onpopstate = function () {
-    // This runs if the user presses back/forward
-    history.go(1); // Move forward again
-  };
   </script>
 </body>
 </html>
